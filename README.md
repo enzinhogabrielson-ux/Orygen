@@ -2,11 +2,16 @@
 
 Site institucional da ORYGEN (soluções financeiras, consultoria tributária e tecnologia white label), feito em **React 18 + Vite + react-router-dom**.
 
+## Como subir no GitHub
+
+1. Crie um repositório novo e vazio no GitHub (sem README).
+2. Envie **todo o conteúdo desta pasta** (pelo GitHub Desktop, ou arrastando os arquivos em "Add file › Upload files").
+3. As pastas `node_modules/` e `dist/` não vão para o GitHub — o `.gitignore` já cuida disso; a Vercel/Netlify gera o `dist` sozinha.
+
 ## O que tem neste pacote
 
 | Pasta / arquivo                     | Para que serve                                                                                                |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `dist/`                             | **Site pronto (já compilado).** É esta pasta que você sobe se a sua plataforma só aceitar arquivos estáticos. |
 | `src/`                              | Código-fonte em React: uma página por arquivo em `src/pages/`, componentes em `src/components/`.              |
 | `public/`                           | Favicon e pontos do símbolo em partículas (`data/og_points.json`).                                            |
 | `vercel.json` e `public/_redirects` | Fazem as rotas (/baas, /tributario…) e a página 404 funcionarem na Vercel e na Netlify.                       |
